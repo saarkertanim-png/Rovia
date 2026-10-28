@@ -5,6 +5,10 @@ on:
     branches: [main, master]
   workflow_dispatch:
 
+defaults:
+  run:
+    working-directory: Rovia
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,4 +34,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rovia-debug-apk
-          path: app/build/outputs/apk/debug/*.apk
+          path: Rovia/app/build/outputs/apk/debug/*.apk
