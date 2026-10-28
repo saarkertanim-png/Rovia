@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Rovia" parent="android:Theme.DeviceDefault.NoActionBar" />
+
+    <style name="Theme.Rovia.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_bg</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_rovia_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.Rovia</item>
+    </style>
+</resources>
